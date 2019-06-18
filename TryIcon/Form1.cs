@@ -11,12 +11,30 @@ namespace TryIcon
 {
     public partial class Form1 : Form
     {
+        private void VisibleChange(bool visible)
+        {
+            this.Visible = visible;
+            this.ntiTray.Visible = !visible;
+        }
+
+
         public Form1()
         {
+
             InitializeComponent();
         }
 
         private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnTray_Click(object sender, EventArgs e)
+        {
+            VisibleChange(false);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

@@ -45,6 +45,7 @@
             this.btnTray.TabIndex = 0;
             this.btnTray.Text = "트레이로 이동";
             this.btnTray.UseVisualStyleBackColor = true;
+            this.btnTray.Click += new System.EventHandler(this.BtnTray_Click);
             // 
             // label1
             // 
@@ -78,7 +79,8 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "트레이 아이콘 by 3199 ㅇㅇㅇ";
+            this.Text = "트레이 아이콘 by 3611 이소현";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
